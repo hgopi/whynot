@@ -1,0 +1,53 @@
+header {
+  .navbar {
+    background-color: #fff;
+    .navbar-inner {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      .navbar-top {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          border-bottom: 1px solid #e5e7e9;
+          width: 101vw;
+        }
+        position: relative;
+        z-index: 1001;
+        padding: 6px 20px 6px 10px;
+        display: flex;
+        align-items: space-between;
+        justify-content: center;
+        .contacts-group {
+          font-size: 14px;
+          line-height: 1.71429;
+          display: flex;
+          flex-grow: 1;
+          align-items: center;
+          .contact-unit {
+            margin-right: 24px;
+            i {
+              display: inline-block;
+              margin-right: 8px;
+            }
+          }
+        }
+        .aside-group {
+          display: flex;
+          .icon i {
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+            font-size: 26px;
+            margin: 8px;
+            color: #9b9b9b;
+          }
+        }
+      }
+    }
+  }
+}
