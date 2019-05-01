@@ -42,9 +42,50 @@ header {
             width: 26px;
             height: 26px;
             line-height: 26px;
+            border-radius: 26px;
             font-size: 26px;
             margin: 8px;
             color: #9b9b9b;
+          }
+        }
+      }
+    }
+
+    .navbar-main {
+      padding: 35px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        color: #1e3953;
+        font-weight: 700;
+      }
+      .nav-panel {
+        display: flex;
+        justify-content: flex-end;
+        a {
+          position: relative;
+          color: #00030a;
+          font-size: 16px;
+          padding: 7px 0;
+          margin-right: 42px;
+          transition: .33s all ease-out;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            max-width: 100%;
+            background: #58c4a7;
+            transition: .33s all ease-out;
+          }
+          &.active:after, &:hover:after {
+            width: 100%;            
           }
         }
       }

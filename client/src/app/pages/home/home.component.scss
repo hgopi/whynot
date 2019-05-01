@@ -1,0 +1,79 @@
+.swiper-container {
+    .swiper-slide {
+        .swiper-slide-caption {
+            max-width: 1200px;
+            margin: 0 auto;
+            .shell {
+                padding: 30px 0 115px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 50%;
+                margin-left: auto;
+                h2 {
+                    font-size: 59px;
+                    line-height: 1.18644;
+                    color: #1e3953;
+                    margin: 0;            
+                    font-family: "Arvo","times new roman","Times","serif";
+                    span {
+                        font-size: .8474576271186441em;
+                    }
+                }
+                p {
+                    color: #000;
+                    font-size: 1.571428571428571em;
+                }
+                a {
+                    padding: 9px 41px;
+                    color: #fff;
+                    background-color: #58c4a7;
+                    border-color: #58c4a7;
+                    display: inline-flex;
+                    font-weight: 700;
+                    font-size: 18px;
+                    font-family: "Arvo","times new roman","Times","serif";
+                    width: 150px;
+                    text-align: center;
+                    margin-top: 22px;
+                    justify-content: center;
+                    line-height: 1.71429;
+                    transition: .3s ease-out;
+                    &:hover {
+                        color: #fff;
+                        background-color: #1e3953;
+                        border-color: #1e3953;
+                    }
+                }
+            }
+        }
+        &.slide-1 {
+            background-image: url('../../../assets/images/home-slider-1.jpg');
+            background-size: cover;
+        }
+        &.slide-2 {
+            background-image: url('../../../assets/images/home-slider-2.jpg');
+            background-size: cover;
+            .swiper-slide-caption {
+                .shell {
+                    margin-left: 0;
+                    justify-content: flex-start;
+                }       
+            }
+        }
+    }
+    .swiper-scrollbar {
+        top: 0;
+        left: 0;
+        width: 100%;
+        /deep/ .swiper-scrollbar-drag {
+            background: #58c4a7;
+        }
+    }
+}
+.features {
+    .cotainer {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
